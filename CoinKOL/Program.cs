@@ -19,7 +19,8 @@ namespace CoinKOL
                 .ConfigureServices((hostContext, services) =>
                 {
                     services.AddHostedService<Worker>();
-                   
+                    services.AddHostedService<TranslationWorker>();
+
                 });
     }
 }
