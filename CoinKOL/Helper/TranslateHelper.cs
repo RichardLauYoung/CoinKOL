@@ -1,4 +1,6 @@
 ﻿using System;
+using CoinKOL.EFCore;
+using CoinKOL.EFCore.Entities;
 using Google.Cloud.Translate.V3;
 
 namespace CoinKOL.Helper
@@ -16,29 +18,51 @@ namespace CoinKOL.Helper
         /// <param name="sourceLanguage">Required. Source language code.</param>
         /// <param name="targetLanguage">Required. Target language code.</param>
         /// <param name="projectId">Your Google Cloud Project ID.</param>
-        public static void TranslateTextSample(string text,string sourceLanguage,
-            string targetLanguage,
-            string projectId)
+        public static void TranslateTextSample(string text,
+            string projectId,
+            string sourceLanguage="en_US",
+            string targetLanguage="zh-CN")
         {
-            TranslationServiceClient translationServiceClient = TranslationServiceClient.Create();
-            TranslateTextRequest request = new TranslateTextRequest
+            try
             {
-                Contents =
+                
+
+                TranslationServiceClient translationServiceClient = TranslationServiceClient.Create();
+                TranslateTextRequest request = new TranslateTextRequest
+                {
+                    Contents =
                 {
                     // The content to translate.
                     text,
                 },
-                SourceLanguageCode = sourceLanguage,
-                TargetLanguageCode = targetLanguage,
-                ParentAsLocationName = new LocationName(projectId, "global"),
-            };
-            TranslateTextResponse response = translationServiceClient.TranslateText(request);
-            // Display the translation for each input text provided
-            foreach (Translation translation in response.Translations)
-            {
-                Console.WriteLine($"Translated text: {translation.TranslatedText}");
+                    SourceLanguageCode = sourceLanguage,
+                    TargetLanguageCode = targetLanguage,
+                    ParentAsLocationName = new LocationName(projectId, "global"),
+                };
+                TranslateTextResponse response = translationServiceClient.TranslateText(request);
+                // Display the translation for each input text provided
+                foreach (Translation translation in response.Translations)
+                {
+                    Console.WriteLine($"Translated text: {translation.TranslatedText}");
+                    SavaTranslateText(text, sourceLanguage, targetLanguage, translation.TranslatedText);
+                }
             }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error text: {ex.Message}");
+            }
+           
         }
+
+        private static bool SavaTranslateText(string text, string fl,string tl,string tText)
+        {
+            var translatedContent = new TranslatedContentEntity {SourceText=text,SourceURL="空的",TranslatedText= tText,Author="lyon",SourceLanguage=fl,TargetLanguage=tl,GlossaryId="lyontest201912091239552",CreteTime=DateTime.Now,Level=3};
+
+            var db = new KolDbContext();
+            
+            return db.SavaTranslateText(translatedContent); 
+        }
+
 
         /// <summary>
         /// Translates a given text to a target language using glossary.
@@ -50,8 +74,8 @@ namespace CoinKOL.Helper
         /// <param name="projectId">Your Google Cloud Project ID.</param>
         public static void TranslateTextWithGlossarySample(
             string text = "[TEXT_TO_TRANSLATE]",
-            string sourceLanguage = "en",
-            string targetLanguage = "ja",
+            string sourceLanguage = "en_US",
+            string targetLanguage = "ch",
             string projectId = "[Google Cloud Project ID]",
             string glossaryId = "[YOUR_GLOSSARY_ID]")
         {

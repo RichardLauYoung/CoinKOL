@@ -1,9 +1,13 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Net.Http;
 using System.Text.Json;
+using CoinKOL.EFCore.Context;
+using CoinKOL.Helper;
 using Google.Cloud.Translate.V3;
+using Microsoft.Extensions.Configuration;
 
 namespace CoinKOL.Services
 {
@@ -12,23 +16,33 @@ namespace CoinKOL.Services
     /// </summary>
     public static class TranslationService
     {
+        private static string ProjectId { get; set; }
+
         static TranslationService()
         {
+            var builder = new ConfigurationBuilder()
+               .SetBasePath(Directory.GetCurrentDirectory())
+               .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
 
+            IConfigurationRoot configuration = builder.Build();
+            ProjectId = configuration.GetSection("Google_Project_Config:ProjectId").Value;
         }
 
         /// <summary>
         /// 翻译任务
         /// </summary>
         /// <returns></returns>
-        static bool Translation(string text)
+        public static bool Translation(string text)
         {
             //获取数据
-
+            
+            
             //翻译
-            TranslateText(text);
+            //TranslateText(text);
+            TranslateHelper.TranslateTextSample(text, ProjectId);
 
             //保存数据
+           
             return true;
         }
 

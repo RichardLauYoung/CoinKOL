@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoinKOL", "CoinKOL\CoinKOL.csproj", "{C136EBA9-9293-4407-9BA9-7EE8EBF409B4}"
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "NBitcoin", "..\NBitcoin-master\NBitcoin\NBitcoin.csproj", "{97DE94E3-5504-4511-A88C-5AB9C8489E9C}"
+Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "NBitcoin", "..\NBitcoin-master\NBitcoin\NBitcoin.csproj", "{38669E76-ABB9-4E28-BCE8-73BBF045AA11}"
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "NBitcoin.Tests", "..\NBitcoin-master\NBitcoin.Tests\NBitcoin.Tests.csproj", "{394B7918-A158-4531-B46A-A67B56408113}"
+Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "NBitcoin.Tests", "..\NBitcoin-master\NBitcoin.Tests\NBitcoin.Tests.csproj", "{0E8B1AED-94BD-4551-B63C-B503E1921D17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoinKOL.EFCore", "CoinKOL.EFCore\CoinKOL.EFCore.csproj", "{ECBA3898-CCAE-43E8-86F2-854E1806A4B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,13 +19,26 @@ Global
 		{C136EBA9-9293-4407-9BA9-7EE8EBF409B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C136EBA9-9293-4407-9BA9-7EE8EBF409B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C136EBA9-9293-4407-9BA9-7EE8EBF409B4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{97DE94E3-5504-4511-A88C-5AB9C8489E9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{97DE94E3-5504-4511-A88C-5AB9C8489E9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{97DE94E3-5504-4511-A88C-5AB9C8489E9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{97DE94E3-5504-4511-A88C-5AB9C8489E9C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{394B7918-A158-4531-B46A-A67B56408113}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{394B7918-A158-4531-B46A-A67B56408113}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{394B7918-A158-4531-B46A-A67B56408113}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{394B7918-A158-4531-B46A-A67B56408113}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38669E76-ABB9-4E28-BCE8-73BBF045AA11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38669E76-ABB9-4E28-BCE8-73BBF045AA11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38669E76-ABB9-4E28-BCE8-73BBF045AA11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38669E76-ABB9-4E28-BCE8-73BBF045AA11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E8B1AED-94BD-4551-B63C-B503E1921D17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E8B1AED-94BD-4551-B63C-B503E1921D17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E8B1AED-94BD-4551-B63C-B503E1921D17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E8B1AED-94BD-4551-B63C-B503E1921D17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECBA3898-CCAE-43E8-86F2-854E1806A4B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECBA3898-CCAE-43E8-86F2-854E1806A4B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECBA3898-CCAE-43E8-86F2-854E1806A4B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECBA3898-CCAE-43E8-86F2-854E1806A4B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.TextStylePolicy = $1
+		$1.FileWidth = 80
+		$1.TabsToSpaces = True
+		$1.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $2
+		$2.scope = text/x-csharp
 	EndGlobalSection
 EndGlobal
