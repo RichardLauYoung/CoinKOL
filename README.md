@@ -1,2 +1,5 @@
-# CoinKOL
-We provide a relevant reputation score to crypto community twitter users, our algorithm applies to the conversations or messages being sent over.
+# KOL
+1.社交排名
+2.IP发行token
+3.网络隐私
+
