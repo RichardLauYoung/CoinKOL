@@ -1,0 +1,43 @@
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{C136EBA9-9293-4407-9BA9-7EE8EBF409B4}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CoinKOL.EFCore/Context/Kol_DbContext.cs">
+    <Files>
+      <File FileName="CoinKOL/Worker.cs" Line="33" Column="1" />
+      <File FileName="CoinKOL/WebClient/TwitterClient.cs" />
+      <File FileName="CoinKOL/Program.cs" />
+      <File FileName="CoinKOL/Services/TwitterService.cs" />
+      <File FileName="CoinKOL/WebClient/Interface/IClient.cs" />
+      <File FileName="CoinKOL/WebUtilities.cs" />
+      <File FileName="CoinKOL/Common/RetryHandler.cs" />
+      <File FileName="CoinKOL/appsettings.Development.json" />
+      <File FileName="CoinKOL.EFCore/Entities/TwitterContentEntity.cs" />
+      <File FileName="CoinKOL.EFCore/Interfacee/IKolDbContext.cs" />
+      <File FileName="CoinKOL.EFCore/Context/Kol_DbContext.cs" Line="21" Column="2" />
+      <File FileName="CoinKOL.EFCore/DbContext/Kol_DbContext.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CoinKOL" expanded="True">
+            <Node name="CoinKOL" expanded="True" />
+            <Node name="CoinKOL.EFCore" expanded="True">
+              <Node name="Context" expanded="True">
+                <Node name="Kol_DbContext.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.CoinKOL PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>../NBitcoin-master/NBitcoin/NBitcoin.csproj</String>
+    <String>../NBitcoin-master/NBitcoin.Tests/NBitcoin.Tests.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

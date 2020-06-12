@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Unisocks Exchange</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<meta content="" name="description" />
+		<meta content="" name="author" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="css/zoom.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="https://rsms.me/inter/inter.css" />
+	</head>
+
+	<body>
+		<div id="Wrap">
+			<div class="Eeurt">
+				<div class="Wrap-top">
+					<a href="index.html">
+						<p class="sc-fzXfQT iwNCAL"><span role="img" aria-label="unicorn">🦄</span>  Unisocks</p>
+					</a>
+					<div>
+						<a href="###">
+							<div class="Btn1">
+								<span role="img" aria-label="fire">🔥</span> 104 <span class="Btn-text">redeemed</span>
+							</div>
+						</a>
+						<div class="Btn2">
+							<p class="sc-fzXfQq bAzGLe">Connect Wallet</p>
+							<div class="sc-fzXfQr lmOTvB"></div>
+						</div>
+					</div>
+				</div>
+				<div class="Wrap-content">
+					<div style="background: rgb(0, 0, 0); border-radius: 8px; transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
+						<div class="intro">
+							<p class="titlea">Unisocks Edition 0</p>
+							<p class="titleb">$SOCKS</p>
+							<div class="imgW">
+								<!--<img src="https://unisocks.exchange/static/media/test.a2def363.png" alt="Logo" class="sc-AykKF fziNtw">-->
+								<a href="javascript:void(0)" data-magnify="gallery"  data-src="img/01.png" >
+            <img src="img/01.png">
+        </a>
+							</div>
+							<div class="titleBtm">
+								<span>
+									<p class="amounta">$ <span>138.72 </span> USD</p>
+									<p class="amountb">99/396 available</p>
+								</span>
+								<a href="###">
+									<div class="annotation">
+										<span class="annotationa">?</span>
+										<p class="annotationb">Dynamic Pricing Stats</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="prompt">
+						<div style="margin-bottom: 4px;">Buy and sell real socks with digital currency.</div>
+						<div style="margin-bottom: 4px;">Delivered on demand.
+							<a href="###" id="Learn">Learn more</a>
+						</div>
+					</div>
+					<div class="Buy-Btn">
+						<button type="cta">
+							<div>Buy</div>
+						</button>
+					</div>
+					<div class="SellRedeem-Btn">
+						<button disabled="" type="secondary" class="sc-fzXfLS kwQocO sc-fzXfMw bAzGII"><div class="sc-fzXfLT bAzGHs">Sell</div>
+						</button>
+						<div></div>
+						<button disabled="" type="secondary" class="sc-fzXfLS kwQocO sc-fzXfMw bAzGII">
+							<div class="sc-fzXfLT bAzGHs">Redeem</div>
+						</button>
+					</div>
+				</div>
+				<!--redeemed-->
+				<div class="Wrap-redeemed">
+					<h2>SOCKS Stats</h2>
+					<div class="redeemedlists">
+						<p><span role="img" aria-label="socks">🧦</span>Initial SOCKS</p>
+						<p>500</p>
+					</div>
+					<div class="redeemedlists">
+						<p><span role="img" aria-label="socks">🔥</span>Redeemed SOCKS</p>
+						<p>104</p>
+					</div>
+					<div class="redeemedlists">
+						<p><span role="img" aria-label="socks">💦</span>SOCKS Pool</p>
+						<p></p>
+					</div>
+					<div style="height: 5rem;"></div>
+					<p class="redeemedBottom">The price of SOCKS changes when tokens are bought and sold.<br><br>
+						<a href="https://medium.com/frst/money-laundry-the-rise-of-the-crypto-sock-market-f979aafc3796" target="_blank" rel="noopener noreferrer">Read more.</a>
+					</p>
+				</div>
+
+				<!--购买部分-->
+				<div id="Buy-Content">
+					<div class="Buy-options">
+						<div class="options-top">
+							<p class="options-p">
+								<span role="img" aria-label="unicorn">🦄</span> Pay</p>
+							<img src="img/01.png" alt="Logo">
+							<div class="options-Num">
+								<div class="options-amount">
+									<div>
+										<p>$ <span>140.54</span></p>
+									</div>
+									<span>99/500 available</span>
+								</div>
+								<div class="options-add">
+									<span class="options-a" onclick="reduce()">-</span>
+									<div class="options-b">1</div>
+									<span class="options-c" onclick="add()">+</span>
+								</div>
+							</div>
+						</div>
+						<span class="options-change">
+							<p><i>How do you want to pay?</i></p>
+							<select onchange="optionsNum()">
+								<option value="ETH">0.7483 ETH</option>
+								<option value="ANT">ANT</option>
+								<option value="BAT">BAT</option>
+								<option value="DAI">DAI</option>
+								<option value="KNC">KNC</option>
+								<option value="MKR">MKR</option>
+								<option value="RDN">RDN</option>
+								<option value="REP">REP</option>
+								<option value="SNT">SNT</option>
+								<option value="SPANK">SPANK</option>
+								<option value="TUSD">TUSD</option>
+								<option value="ZRX">ZRX</option>
+							</select>
+							<div class="options-changeBtn">
+								<img src="https://unisocks.exchange/static/media/arrow.f85f0529.svg" alt="dropdown-arrow" class="sc-fzXfOv bAzGJV"></div>
+						</span>
+						<button class="Connect-Btn" type="cta">
+									<div>Connect Wallet</div>
+								</button>
+						<div style="display: flex; align-items: center; justify-content: center; width: 100%;">
+							<div style="position: relative;"></div>
+						</div>
+					</div>
+					<div class="shadr"></div>
+				</div>
+				<!--Learn more部分-->
+				<div id="Learn-more">
+					<div class="Learn-center">
+						<div class="Learn-centerList">
+							<div class="Learn-centerTop">
+								<p>
+									<span role="img" aria-label="unicorn">🦄</span> Pay
+									<span style="color: rgb(115, 115, 115);"> </span>
+								</p>
+								<img id="close" src="https://unisocks.exchange/static/media/close_dark.590723f0.svg" alt="close" class="sc-fzXfNg bAzGIZ">
+							</div>
+							<p class="Learn-centerTitle">How it works:</p>
+							<p class="centerlists">$SOCKS is a token that entitles you to 1 real pair of limited edition socks, shipped anywhere in the world.</p>
+							<p class="centerlists">You can sell the token back at any time. To get a <i>real</i> pair, redeem a $SOCKS token</p>
+							<p class="Learn-centerTitle">How it's priced:</p>
+							<p class="centerlists">$SOCKS tokens are listed starting at $12 USD. Each buy/sell will move the price. The increase or decrease follows a
+								<a href="https://blog.relevant.community/bonding-curves-in-depth-intuition-parametrization-d3905a681e0a" target="_blank" rel="noopener noreferrer">bonding curve</a>. $SOCKS will eventually find an equillibrium based on market demand.</p>
+							<p class="Learn-centerTitle">Unipay:</p>
+							<p class="centerlists">Buying or selling socks uses the uniswap protocol and accepts any token input as a payment method. The pool of SOCKS is a uniswap pool where 500 SOCKS tokens were deposited along with the starting value of ETH. </p>
+							<p class="centerlists">
+								<a href="https://docs.uniswap.io/" target="_blank" rel="noopener noreferrer">Learn more about how uniswap works.</a>
+							</p>
+							<p class="centerlists">
+								<a href="mailto:contact@uniswap.io" target="_blank" rel="noopener noreferrer">Get in touch.</a>
+							</p>
+						</div>
+						<div style="display: flex; align-items: center; justify-content: center; width: 100%;">
+							<div style="position: relative;"></div>
+						</div>
+					</div>
+					<div class="shadr"></div>
+				</div>
+				<!--Connect Wallet部分-->
+				<div id="Connect-Wallet">
+					<div class="Connect-Content">
+						<div class="Connect-ContentList">
+							<div class="Connect-ContentTop">
+								<p><span role="img" aria-label="unicorn">🦄</span> Pay <span style="color: rgb(115, 115, 115);"> </span></p>
+								<img id="closeWallet" src="https://unisocks.exchange/static/media/close_dark.590723f0.svg" alt="close" class="sc-fzXfNg bAzGIZ">
+							</div>
+							<div style="width: 100%;height: 1rem;"></div>
+							<button type="cta" class="Connect-ContentBtn1"><div class="sc-fzXfLT bAzGHs">Browser Wallet</div></button>
+							<div style="width: 100%;height: 1rem;"></div>
+							<button type="cta" class="Connect-ContentBtn1">
+								<div class="sc-fzXfLT bAzGHs">WalletConnect</div></button>
+							<p style="width: 100%; text-align: center;margin: 0; margin-top: 12px;">Don't have one?
+								<a href="https://ethereum.org/use/#_3-what-is-a-wallet-and-which-one-should-i-use">Learn more</a>
+							</p>
+						</div>
+						<div style="display: flex; align-items: center; justify-content: center; width: 100%;">
+							<div style="position: relative;"></div>
+						</div>
+					</div>
+					<div class="shadr"></div>
+				</div>
+			</div>
+		</div>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/zoom.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//图片缩放
+			$(function () {
+	$('[data-magnify]').Magnify({
+		Toolbar: [
+			'prev',
+			'next',
+			'rotateLeft',
+			'rotateRight',
+			'zoomIn',
+			'actualSize',
+			'zoomOut'
+		],
+		keyboard:true,
+		draggable:true,
+		movable:true,
+		modalSize:[800,600],
+		beforeOpen:function (obj,data) {
+			console.log('beforeOpen')
+		},
+		opened:function (obj,data) {
+			console.log('opened')
+		},
+		beforeClose:function (obj,data) {
+			console.log('beforeClose')
+		},
+		closed:function (obj,data) {
+			console.log('closed')
+		},
+		beforeChange:function (obj,data) {
+			console.log('beforeChange')
+		},
+		changed:function (obj,data) {
+			console.log('changed')
+		}
+	});
+
+})
+			//判断移动或PC
+			function  getClientInfo() {     
+				var  userAgentInfo  =  navigator.userAgent;     
+				var  Agents  =  new  Array("Android",  "iPhone",  "SymbianOS",  "Windows Phone",  "iPad",  "iPod");     
+				var  agentinfo  =  null;     
+				for (var  i  =  0;  i  <  Agents.length;  i++)  {         
+					if (userAgentInfo.indexOf(Agents[i])  >  0)  { 
+						agentinfo  =  userAgentInfo; 
+						break; 
+					}     
+				}     
+				if(agentinfo) {
+					$(".Btn-text").hide();        
+					return  agentinfo;   
+				} else {
+					$(".Btn-text").show();        
+					return  "PC";    
+				}     
+			}
+			//调用du示例
+			getClientInfo();
+			// 104 redeemed
+			$(".Btn1").click(function() {
+				$(".Wrap-content").hide();
+				$(".Wrap-redeemed").show();
+			})
+			//Connect Wallet
+			$(".Btn2").click(function() {
+				if($(".Wrap-content").css("display")=="block"){
+					$("#Connect-Wallet").show();
+					$("#Connect-Wallet .shadr").show();
+				$(".Connect-Content").css({
+					"bottom": "20%",
+					"visibility": "inherit"
+				});
+					
+				}
+				
+			})
+			//购买部分
+			$(".Buy-Btn").click(function() {
+				$("#Buy-Content .shadr").show();
+				$("#Buy-Content").show();
+				$(".Buy-options").css({
+					"bottom": "20%",
+					"visibility": "inherit"
+				});
+				$(".Eeurt").css("position", "absolute");
+			})
+			$(".Connect-Btn").click(function() {
+				$("#Buy-Content").hide();
+				$(".Buy-options").css({
+					"bottom": "-100%",
+					"visibility": "hidden"
+				});
+					$("#Connect-Wallet").show();
+					$("#Connect-Wallet .shadr").show();
+				$(".Connect-Content").css({
+					"bottom": "20%",
+					"visibility": "inherit"
+				});
+				
+			})
+			//数量价格函数.
+			var a,b,c;
+			function add(){
+				a = Number($(".options-b").html())+1;
+				b = Number($(".amounta span").html());
+				c=a*b;
+				c=c.toFixed(2);
+				$(".options-b").html(a);
+				$(".options-amount p span").html(c);
+				optionsNum();
+			}
+			function reduce(){
+				if($(".options-b").html()>1){
+					a = Number($(".options-b").html())-1;
+				b = Number($(".amounta span").html());
+				c=a*b;
+				c=c.toFixed(2)
+				$(".options-b").html(a);
+				$(".options-amount p span").html(c)
+				}
+				optionsNum();
+			}
+			var str = ["ETH","ANT","BAT","DAI","KNC","MKR","RDN","REP","SNT","SPANK","TUSD","ZRX"];
+			function optionsNum(){
+				var obj = $(".options-change select");
+				//obj.html(htmlStr());
+				obj.find("option").each(function(index){
+					$(this).html(str[index])
+				})
+				a = Number($(".options-b").html());
+				if (obj.val()=="ETH") {
+					obj.find("option:selected").text(0.7483*a+" ETH");
+				}else if (obj.val()=="ANT") {
+					obj.find("option:selected").text(159.2632*a+" ANT");
+				}else if (obj.val()=="BAT") {
+					obj.find("option:selected").text(749.5269*a+" BAT");
+				}else if (obj.val()=="DAI") {
+					obj.find("option:selected").text(142.6711*a+" DAI");
+				}else if (obj.val()=="KNC") {
+					obj.find("option:selected").text(167.8052*a+" KNC");
+				}else if (obj.val()=="MKR") {
+					obj.find("option:selected").text(0.2731*a+" MKR");
+				}else if (obj.val()=="RDN") {
+					obj.find("option:selected").text(810.6847*a+" RDN");
+				}else if (obj.val()=="REP") {
+					obj.find("option:selected").text(11.6818*a+" REP");
+				}else if (obj.val()=="SNT") {
+					obj.find("option:selected").text(6543.2606*a+" SNT");
+				}else if (obj.val()=="SPANK") {
+					obj.find("option:selected").text(62837.8849*a+" SPANK");
+				}else if (obj.val()=="TUSD") {
+					obj.find("option:selected").text(877.3711*a+" TUSD");
+				}else if (obj.val()=="ZRX") {
+					obj.find("option:selected").text(986.1187*a+" ZRX");
+				}
+			}
+			$(".shadr").click(function() {
+				$(".shadr").hide();
+				//购买部分
+				$("#Buy-Content").hide();
+				$(".Buy-options").css({
+					"bottom": "-100%",
+					"visibility": "hidden"
+				});
+				//Learn more
+				$("#Learn-more").hide();
+				$(".Learn-center").css({
+					"bottom": "-100%",
+					"visibility": "hidden"
+				});
+				//Connect Wallet
+				$("#Connect-Wallet").hide();
+				$(".Connect-Content").css({
+					"bottom": "-100%",
+					"visibility": "hidden"
+				});
+				$(".Eeurt").css("position", "initial");
+			})
+			//			Learn more
+			$("#Learn").click(function() {
+				$("#Learn-more").show();
+				$("#Learn-more .shadr").show();
+				$(".Learn-center").css({
+					"bottom": "20%",
+					"visibility": "inherit"
+				});
+				$(".Eeurt").css("position", "absolute");
+			})
+			$("#close").click(function() {
+				$("#Learn-more .shadr").hide();
+				$("#Learn-more").hide();
+				$(".Learn-center").css({
+					"bottom": "-100%",
+					"visibility": "hidden"
+				});
+				$(".Eeurt").css("position", "initial");
+			})
+			$("#closeWallet").click(function() {
+				$("#Connect-Wallet .shadr").hide();
+				$("#Connect-Wallet").show();
+				$(".Connect-Content").css({
+					"bottom": "-100%",
+					"visibility": "hidden"
+				});
+				$(".Eeurt").css("position", "initial");
+			})
+		</script>
+	</body>
+
+</html>
